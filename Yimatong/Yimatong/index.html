@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link href="style/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<table width="1080" border="0" align="center">
+  <tbody>
+    <tr>
+      <td colspan="3" style=""><img src="images/图片上.png" width="1079" height="651" alt=""/></td>
+    </tr>
+    <tr>
+      <td width="164" height="104"><img src="images/图片左.png" width="164" height="104" alt=""/></td>
+      <td style="text-align: center; font-size: 55px;"width="769">
+      	<script language="javascript" type="text/javascript">
+			document.write("<span id=time></span>")
+			setInterval(function(){
+			var dt = new Date();
+			var dt_year = dt.getUTCFullYear(); var dt_month = dt.getMonth() + 1; var dt_day = dt.getDate(); var dt_hour = dt.getHours(); var dt_minute = dt.getMinutes(); var dt_second = dt.getSeconds(); var dt_subsecond = 60-dt.getSeconds();dt_year = dt_year.toString();
+			if (dt_hour < 10) dt_hour = '0' + dt_hour ; if (dt_minute < 10) dt_minute = '0' + dt_minute ; if (dt_second < 10) dt_second = '0' + dt_second ;if (dt_subsecond < 10) dt_subsecond = '0' + dt_subsecond ;
+				with(new Date)
+				time.innerText= dt_year +"-0"+dt_month+"-"+dt_day+" "+dt_hour+":"+dt_minute+":"+dt_second+" （"+dt_subsecond+"）"
+			},1000)
+		</script>
+      </td>
+      <td width="134"><img src="images/图片右.png" width="134" height="104" alt=""/></td>
+    </tr>
+    <tr>
+      <td height="219" colspan="3"><img src="images/图片下.png" width="1079" height="1550" alt=""/></td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
